@@ -23,4 +23,13 @@
   #object
   $myObject = (object)["name"=>"Ben", "age"=>28,];
   echo "<p>Hi, I'm $myObject->name and I'm $myObject->age years old.</p>";
+
+  #var_dump()
+  var_dump($name);
+  echo "<br>";
+  var_dump($myArray);
+  echo "<br>";
+  var_dump($fruits);
+  echo "<br>";
+  var_dump($myObject);
 ?>
