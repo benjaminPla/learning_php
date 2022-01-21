@@ -32,4 +32,20 @@
   var_dump($fruits);
   echo "<br>";
   var_dump($myObject);
+
+  #functions
+  function sayHi() {
+    echo "<p>Hi!</p>";
+  };
+  sayHi();
+
+  function sayHiWithParameters($param1, $param2) {
+    echo "<p>Hi $param1, you have $param2 years old!</p>";
+  };
+  sayHiWithParameters("Ben", 28);
+
+  function returner($param1, $param2) {
+    return $param1 + $param2;
+  };
+  echo returner(1, 2);
 ?>
