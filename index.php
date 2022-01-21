@@ -1,8 +1,8 @@
 <?php
+#variables
   $name = "Ben";
   echo "<h1>Hi $name!</h1>";
 
-  #array
   $myArray = array("item1", "item2", "item3");
   echo "
   <ul>
@@ -11,7 +11,6 @@
     <li>$myArray[2]</li>
   </ul>";
 
-  #array 2
   $fruits = array("fruit1"=>"banana", "fruit2"=>"apple", "fruit3"=>"melon");
   echo "
   <ul>
@@ -20,11 +19,10 @@
     <li>$fruits[fruit3]</li>
   </ul>";
 
-  #object
   $myObject = (object)["name"=>"Ben", "age"=>28,];
   echo "<p>Hi, I'm $myObject->name and I'm $myObject->age years old.</p>";
 
-  #var_dump()
+#var_dump()
   var_dump($name);
   echo "<br>";
   var_dump($myArray);
@@ -33,7 +31,7 @@
   echo "<br>";
   var_dump($myObject);
 
-  #functions
+#functions
   function sayHi() {
     echo "<p>Hi!</p>";
   };
@@ -48,4 +46,27 @@
     return $param1 + $param2;
   };
   echo returner(1, 2);
+
+#conditionals
+  $numb1 = 1;
+  $numb2 = 2;
+  if ($numb1 < $numb2) {
+    echo "<p>$numb1 is lower than $numb2.</p>";
+  } else if ($numb1 == $numb2) {
+    echo "<p>$numb1 is equal to $numb2.</p>";
+  } else {
+    echo "<p>$numb1 is greater than $numb2.</p>";
+  };
+
+  $day = "monday";
+  switch($day) {
+    case("saturday"):
+      echo "It's saturday!";
+    break;
+    case("sunday"):
+      echo "It's sunday!";
+    break;
+    default:
+      echo "It's not weekend.";
+  };
 ?>
