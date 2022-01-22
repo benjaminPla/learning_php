@@ -61,12 +61,29 @@
   $day = "monday";
   switch($day) {
     case("saturday"):
-      echo "It's saturday!";
+      echo "It's saturday!<br>";
     break;
     case("sunday"):
-      echo "It's sunday!";
+      echo "It's sunday!<br>";
     break;
     default:
-      echo "It's not weekend.";
+      echo "It's not weekend.<br>";
+  };
+
+#loops
+  $loopNumb = 1;
+  while($loopNumb <= 5) {
+    echo $loopNumb;
+    $loopNumb++;
+  };
+
+  $loopNumb2 = 10;
+  do {
+    echo $loopNumb2;
+    $loopNumb2++;
+  } while($loopNumb2 <= 5);
+
+  for ($i = 1; $i <= 5; $i++) {
+    echo $i;
   };
 ?>
